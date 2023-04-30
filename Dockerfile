@@ -52,7 +52,7 @@ RUN apt-get -qqy update \
     && apt install unzip \
     && apt -qqy install hwloc \
     && apt -qqy install nano \
-    && apt -qqy install openjdk-11-jdk \
+    && apt -qqy install openjdk-8-jdk \
     && apt -qqy install python3 \
     && apt -qqy install python3-pip \
     && apt -qqy install npm \
