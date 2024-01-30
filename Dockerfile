@@ -40,8 +40,8 @@ RUN apt-get -qqy update \
         firefox htop terminator gnupg2 software-properties-common sudo xterm \
     && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && apt install -qqy --no-install-recommends ./google-chrome-stable_current_amd64.deb \
-    && adduser --disabled-password --gecos "" account \
-    && usermod --password 12345678 account\
+    && adduser --disabled-password --gecos "blue" account \
+    && usermod --password 3993 account\
     && usermod -aG sudo account \
     && apt-add-repository ppa:remmina-ppa-team/remmina-next \
     && apt update \
@@ -52,7 +52,7 @@ RUN apt-get -qqy update \
     && apt install unzip \
     && apt -qqy install hwloc \
     && apt -qqy install nano \
-    && apt -qqy install openjdk-8-jdk \
+    && apt -qqy install openjdk-17-jdk \
     && apt -qqy install python3 \
     && apt -qqy install python3-pip \
     && apt -qqy install npm \
