@@ -52,6 +52,8 @@ RUN apt-get -qqy update \
     && apt install unzip \
     && apt -qqy install hwloc \
     && apt -qqy install nano \
+    && apt -qqy install vim \
+    && apt -qqy install docker.io \
     && apt -qqy install openjdk-17-jdk \
     && apt -qqy install python3 \
     && apt -qqy install python3-pip \
