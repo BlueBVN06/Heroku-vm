@@ -42,7 +42,6 @@ RUN apt-get -qqy update \
     && sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config \
     && sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 EXPOSE 22
-CMD ["/usr/sbin/sshd", "-D"]
 
 RUN apt-get -qqy update \
     && apt-get -qqy --no-install-recommends install \
